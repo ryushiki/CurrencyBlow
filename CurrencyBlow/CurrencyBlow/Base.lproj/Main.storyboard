@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyBlow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vNc-lp-Kcw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="588"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="TmQ-J1-SPx">
+                                <rect key="frame" x="0.0" y="640" width="414" height="216"/>
+                                <subviews>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BOT-3s-Xh9">
+                                        <rect key="frame" x="0.0" y="0.0" width="103.5" height="216"/>
+                                    </pickerView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3ZT-M2-ear">
+                                        <rect key="frame" x="103.5" y="0.0" width="103.5" height="216"/>
+                                    </pickerView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JJo-iH-W7Q">
+                                        <rect key="frame" x="207" y="0.0" width="103.5" height="216"/>
+                                    </pickerView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MG2-ar-gJ6">
+                                        <rect key="frame" x="310.5" y="0.0" width="103.5" height="216"/>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vNc-lp-Kcw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Dby-ms-6ae"/>
+                            <constraint firstItem="vNc-lp-Kcw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Dim-ik-kJQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TmQ-J1-SPx" secondAttribute="bottom" constant="6" id="GnW-eR-r2p"/>
+                            <constraint firstAttribute="trailing" secondItem="TmQ-J1-SPx" secondAttribute="trailing" id="JiW-X4-Ste"/>
+                            <constraint firstItem="TmQ-J1-SPx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="L0i-kN-szV"/>
+                            <constraint firstItem="vNc-lp-Kcw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VTy-fS-Xpd"/>
+                            <constraint firstItem="TmQ-J1-SPx" firstAttribute="top" secondItem="vNc-lp-Kcw" secondAttribute="bottom" constant="8" symbolic="YES" id="qXS-Cl-ahr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView1" destination="BOT-3s-Xh9" id="fs2-Y8-h38"/>
+                        <outlet property="pickerView2" destination="3ZT-M2-ear" id="F34-ZI-N3C"/>
+                        <outlet property="pickerView3" destination="JJo-iH-W7Q" id="3dX-JK-Oep"/>
+                        <outlet property="pickerView4" destination="MG2-ar-gJ6" id="SLu-gC-DMT"/>
+                        <outlet property="tableView" destination="vNc-lp-Kcw" id="7ag-67-THI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="107.8125"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
